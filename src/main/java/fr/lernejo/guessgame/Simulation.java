@@ -42,7 +42,7 @@ public class Simulation {
         }
         return false;
     }
-
+    //MODIF PART4
     public void loopUntilPlayerSucceed( long turns ) {
         long count = 0;
         boolean found; //defaults to false
