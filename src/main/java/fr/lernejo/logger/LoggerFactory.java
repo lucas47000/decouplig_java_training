@@ -2,6 +2,7 @@ package fr.lernejo.logger;
 
 public class LoggerFactory {
     public static Logger getLogger( String name ) {
+    	//MODIF PART 5
         FileLogger fileLogger = new FileLogger( "./runLogs.log" );
         FilteredLogger filteredLogger = new FilteredLogger( fileLogger, message -> message.contains( "simulation" ) );
         CompositeLogger compositeLogger = new CompositeLogger( new ConsoleLogger(), filteredLogger );
